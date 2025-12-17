@@ -1,0 +1,79 @@
+{
+  "utente": {
+    "nome": "Valerio",
+    "saldo": 1450.32,
+    "iban": "IT45K03069032001000000123456"
+  },
+  "movimenti": [
+    {
+      "id": 1,
+      "data": "2023-12-17",
+      "descrizione": "Cena Sushi con Marco",
+      "importo": -45.5,
+      "tipo": "uscita"
+    },
+    {
+      "id": 2,
+      "data": "2023-12-16",
+      "descrizione": "Stipendio Dicembre",
+      "importo": 1850,
+      "tipo": "entrata"
+    },
+    {
+      "id": 3,
+      "data": "2023-12-15",
+      "descrizione": "Abbonamento Netflix",
+      "importo": -12.99,
+      "tipo": "uscita"
+    },
+    {
+      "id": 4,
+      "data": "2023-12-14",
+      "descrizione": "Ricarica Telefonica",
+      "importo": -10,
+      "tipo": "uscita"
+    },
+    {
+      "id": 5,
+      "data": "2023-12-12",
+      "descrizione": "Regalo Mamma Compleanno",
+      "importo": -80,
+      "tipo": "uscita"
+    },
+    {
+      "id": 6,
+      "data": "2023-12-10",
+      "descrizione": "Benzina Self-Service",
+      "importo": -50,
+      "tipo": "uscita"
+    },
+    {
+      "id": 7,
+      "data": "2023-12-08",
+      "descrizione": "Rimborso cena pizza",
+      "importo": 15,
+      "tipo": "entrata"
+    },
+    {
+      "id": 8,
+      "data": "2023-12-05",
+      "descrizione": "Spesa Esselunga",
+      "importo": -123.45,
+      "tipo": "uscita"
+    },
+    {
+      "id": 9,
+      "data": "2023-12-01",
+      "descrizione": "Affitto Casa",
+      "importo": -650,
+      "tipo": "uscita"
+    },
+    {
+      "id": 10,
+      "data": "2023-11-28",
+      "descrizione": "Acquisto Cuffie Bluetooth",
+      "importo": -35.90,
+      "tipo": "uscita"
+    }
+  ]
+}
