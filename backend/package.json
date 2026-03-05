@@ -1,14 +1,20 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "mybank-api",
+  "version": "1.1.0",
+  "description": "Express API for MyBank demo application.",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node server.js",
+    "start": "node server.js",
+    "test": "node --check server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "express",
+    "api",
+    "banking-demo"
+  ],
+  "author": "@valbot",
+  "license": "MIT",
   "type": "commonjs",
   "dependencies": {
     "body-parser": "^2.2.1",

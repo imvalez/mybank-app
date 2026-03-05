@@ -1,15 +1,33 @@
-// Qui gestisco tutte le chiamate verso il backend (localhost:3000)
-const BASE_URL = "http://localhost:3000/api";
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:3000/api";
+
+const parseResponse = async (response) => {
+  if (!response.ok) {
+    let message = `Request failed with status ${response.status}`;
+
+    try {
+      const errorPayload = await response.json();
+      if (errorPayload?.error) {
+        message = errorPayload.error;
+      }
+    } catch {
+      // no-op: fallback to generic message
+    }
+
+    throw new Error(message);
+  }
+
+  return response.json();
+};
 
 export const api = {
   getUtente: async () => {
     const response = await fetch(`${BASE_URL}/utente`);
-    return response.json();
+    return parseResponse(response);
   },
 
   getMovimenti: async () => {
     const response = await fetch(`${BASE_URL}/movimenti`);
-    return response.json();
+    return parseResponse(response);
   },
 
   effettuaBonifico: async (nuovoMovimento) => {
@@ -20,6 +38,6 @@ export const api = {
       },
       body: JSON.stringify(nuovoMovimento)
     });
-    return response.json();
+    return parseResponse(response);
   }
 };
